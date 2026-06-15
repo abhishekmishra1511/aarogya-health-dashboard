@@ -106,8 +106,14 @@ export default function App() {
   const [appointments, setAppointments] = useState(INITIAL_APPOINTMENTS);
   const [reports] = useState(MOCK_REPORTS);
 
+  // Scroll to top when active tab changes
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [activeTab]);
+
   // Booking Modal States
   const [showBookModal, setShowBookModal] = useState(false);
+
   const [selectedDoctor, setSelectedDoctor] = useState(DOCTOR_OPTIONS[0].name);
   const [appointmentDate, setAppointmentDate] = useState('');
   const [appointmentTime, setAppointmentTime] = useState('');
@@ -185,8 +191,9 @@ export default function App() {
   const confirmedCount = appointments.filter(a => a.status === 'Confirmed').length;
 
   return (
-    <div className="container-fluid p-0 overflow-hidden position-relative" style={{ minHeight: '100vh' }}>
+    <div className="container-fluid p-0 overflow-x-hidden position-relative" style={{ minHeight: '100vh' }}>
       {/* Background decorations */}
+
       <div className="bg-glow-radial glow-teal"></div>
       <div className="bg-glow-radial glow-blue"></div>
 
