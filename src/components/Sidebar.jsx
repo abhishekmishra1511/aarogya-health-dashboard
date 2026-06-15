@@ -9,7 +9,7 @@ export default function Sidebar({ activeTab, setActiveTab }) {
   ];
 
   return (
-    <div className="sidebar-wrapper d-flex flex-column h-100 p-3">
+    <div className="sidebar-wrapper p-3">
       {/* Brand */}
       <div className="d-none d-lg-flex align-items-center gap-2 mb-4 px-3">
         <div className="bg-teal text-white rounded-3 p-2 d-flex align-items-center justify-content-center" style={{ backgroundColor: '#0d9488' }}>
@@ -33,7 +33,7 @@ export default function Sidebar({ activeTab, setActiveTab }) {
       </div>
 
       {/* Navigation Links */}
-      <ul className="nav nav-pills flex-column mb-auto gap-1">
+      <ul className="nav nav-pills flex-row flex-lg-column mb-auto gap-1 w-100 justify-content-around justify-content-lg-start">
         {navItems.map((item) => (
           <li key={item.id} className="nav-item">
             <a
