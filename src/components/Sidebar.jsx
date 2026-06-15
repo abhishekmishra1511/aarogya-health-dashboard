@@ -16,7 +16,7 @@ export default function Sidebar({ activeTab, setActiveTab }) {
           <i className="bi bi-heart-pulse-fill fs-4 text-white"></i>
         </div>
         <span className="fs-4 fw-bold heading-font tracking-tight text-white">
-          Aegis<span style={{ color: '#0d9488' }}>Health</span>
+          Aarogya<span style={{ color: '#0d9488' }}>Health</span>
         </span>
       </div>
 
