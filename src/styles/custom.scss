@@ -277,6 +277,7 @@ $input-placeholder-color: #64748b;
   .sidebar-wrapper {
     height: auto !important;
     position: fixed !important;
+    top: auto !important;
     bottom: 0 !important;
     left: 0 !important;
     right: 0 !important;
@@ -286,6 +287,7 @@ $input-placeholder-color: #64748b;
     flex-direction: row !important;
     justify-content: space-around !important;
     padding: 0.5rem 0 !important;
+
     
     .nav-link {
       margin: 0 !important;
